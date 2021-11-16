@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: white;
+  font-family: 'montserrat';
+}
+
+main{
+  height: 270vh;
+}
+
+p {
+  font-family: montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+h1{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+h2{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.foraar{
+  text-align: center;
+}
+
+.text{
+  margin-left: 10px;
+}
+
+.cykel{
+  margin-left: 10px;
+}
+
+.textweb{
+  font-size: 20px;
+}
+
+/*Media rules for Iphone og stående ipad*/
+@media only screen and (max-width: 769px) {
+
+  .textweb{
+    display: none;
+  }
+
+  .textmobil{
+    margin-top: 30px;
+  }
+
+  .formorange{
+    position:absolute;
+    top: 150px;
+    z-index: -1;
+    margin-left: -60px;
+  }
+
+  .cykel{
+    margin-top: 50px;
+  }
+
+  .formorange2{
+    position:absolute;
+    z-index: -1;
+    margin-left: 270px;
+    margin-top: -40%;
+  }
+
+  .orangehjul{
+    display: none;
+  }
+
+}
+
+
+/*Media rules for liggende ipad og web*/
+@media only screen and (min-width: 770px) {
+
+  .textmobil{
+    display: none;
+  }
+
+  .boxforaar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cykel{
+  margin-right: 100px;
+  margin-left: 50px;
+  }
+
+  .textweb{
+  margin-right: 100px;
+  }
+
+  .pirceestimate{
+    margin-left: 545px;
+    margin-top: 20px;
+  }
+
+  .formorange{
+    display: none;
+  }
+
+  .formorange2{
+    display: none;
+  }
+
+  .orangehjul{
+    position:absolute;
+    z-index: -1;
+    margin-left: 1190px;
+  }
+
+}
